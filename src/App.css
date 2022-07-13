@@ -1,38 +1,277 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(https://img.freepik.com/free-vector/cute-astronaut-holding-flag-moon-cartoon-vector-icon-illustration-science-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4115.jpg?t=st=1657147053~exp=1657147653~hmac=d689eb5bb47fff51c0d551bc82c8bf283923da7be6f74b8dea2ed6960a20b019&w=900);
+  background-repeat: no-repeat;
+  background-color: #d29ff6;
+  background-position: right -3% bottom 0%;
+  background-attachment: fixed;
+  background-size: 30%;
+}
+
+.app {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 430px;
+}
+
+
+input {
+  padding: 15px;
+  margin: 10px 0 10px 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 1px solid #d29ff6;
+  outline-color: #701e99;
+}
+
+input:hover,
+input:active {
+  border: 1px solid #381b46;
+  cursor: pointer;
+}
+
+::placeholder {
+  display: flex;
+
+  color: #b2a9b9;
+}
+
+.red {
+  border-color: red;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 38%;
+  max-width: 460px;
+  background-color: #f8e8f9;
+  padding: 0 10px;
+  border-radius: 1%;
+  box-shadow: 0px 0px 10px #0000001d;
+}
+
+label {
+
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #381b46;
+}
+
+h1 {
+  color: #22102a;
   text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2.1rem;
+  margin-bottom: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.form-input button {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  background-color: #22102a;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+  cursor: pointer;
+  background-color: #701e99;
+  color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.result {
+  margin: 75px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  max-width: 650px;
+  border: #701e99 1px solid;
+  border-radius: 5px;
+  justify-content: center;
+  background-color: #f8e8f9;
+
+}
+
+.grp {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+.result button {
+  width: 45%;
+  max-width: 250px;
+  height: 50px;
+  padding: 0 10px;
+  border: none;
+  background-color: #22102a;
   color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.result p {
+  font-size: 18px;
+  margin-bottom: 25px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+  height: 30%;
+}
+
+.text span {
+  margin: 0 4px;
+  font-weight: 600;
+  color: #701e99 ;
+  text-decoration: underline #22102a;
+}
+
+.text p {
+  color: #22102a;
+}
+
+@media (max-width: 1026px) {
+  body {
+    background-position: right -8% bottom -2%;
+    background-size: 28%;
   }
-  to {
-    transform: rotate(360deg);
+
+  form {
+    width: 90%;
+  }
+
+
+}
+
+@media (max-width: 875px) {
+  body {
+    background-position: right -8% bottom -2%;
+    background-size: 26%;
+  }
+
+  .result button {
+    width: 55%;
+  }
+
+}
+
+@media (max-width: 761px) {
+  body {
+    background-position: right -6% bottom -6%;
+    background-size: 26%;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .result button {
+    width: 65%;
+  }
+
+}
+
+@media (max-width: 489px) {
+  body {
+    background-position: right 0% bottom -5%;
+    background-size: 32%;
+  }
+
+  .result button {
+    width: 65%;
+  }
+  footer {
+   font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    background-position: right -2% bottom -6%;
+    background-size: 40%;
+  }
+  footer {
+    font-size: 0.85rem;
+   }
+}
+
+@media (max-width: 320px) {
+  body {
+    background-position: right -2% bottom -2%;
+    background-size: 40%;
+  }
+
+  input {
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    font-size: 0.92rem;
+    border: 1px solid #d29ff6;
+    outline-color: #701e99;
+  }
+
+  label {
+
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #381b46;
   }
 }
